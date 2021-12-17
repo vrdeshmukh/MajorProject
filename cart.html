@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viweport" content="width-device-width, initial-scale=1.0">
+  <title>All Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/MajorProjectLogo.jpg" width="300px">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="consult.html">Consult</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+<!-----cart item details------>
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="images/P1.jpg">
+          <div>
+            <p>Electric Noodle Making Machine</p>
+            <small>Price : $50.00</small>
+            <br>
+            <a >Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><Input type="number" value="1"></Input></td>
+      <td>$50.50</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="images/P4.jpg">
+          <div>
+            <p>Cup Soft Ice Cream Making Machine</p>
+            <small>Price : $50.00</small>
+            <br>
+            <a >Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><Input type="number" value="1"></Input></td>
+      <td>$50.50</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="images/P5.jpg">
+          <div>
+            <p>Potato Chips Making Machine</p>
+            <small>Price : $50.00</small>
+            <br>
+            <a >Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><Input type="number" value="1"></Input></td>
+      <td>$50.50</td>
+    </tr>
+  </table>
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>$150.00</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>$200.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-----js for toggle menu----->
+<script>
+  var MenuItems = document.getElementById("MenuItems")
+  MenuItems.style.maxHeight = "0px";
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px"){
+      MenuItems.style.maxHeight = "200px";
+    }
+    else{
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+</body>
+</html>
