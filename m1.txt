@@ -2,4 +2,12 @@ Hello I am tejas shar
 
 I am from Mit Aoe
 
+<<<<<<< HEAD
 i am new tejas
+=======
+
+
+and I am Amit Mane from ENTC branch
+
+new addition
+>>>>>>> 43807b4d9535137326edb22ccb8a394e52181257
